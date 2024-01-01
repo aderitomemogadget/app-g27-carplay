@@ -56,7 +56,7 @@
     </plugin>
 
 
-    <plugin name="cordova-plugin-carplay-android-auto" source="npm"/>
+    <!--plugin name="cordova-plugin-carplay-android-auto" source="npm"/-->
     
 
     <plugin name="cordova-plugin-dialogs" source="npm" />
