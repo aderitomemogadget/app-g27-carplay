@@ -1,7 +1,16 @@
 repositories {
     jcenter()
     mavenCentral()
-        maven { url 'https://api.mapbox.com/downloads/v2/releases/maven' }
+        maven { 
+            url 'https://api.mapbox.com/downloads/v2/releases/maven',
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                username = "mapbox"
+                password = project.properties['sk.eyJ1IjoiYWRlcml0b2Zlcm5hbmRlcyIsImEiOiJjbHJtcGtkZ3YwNHIyMmpxbDlvczJmZHRoIn0.Nm0qDpISRT4gEYsHYboeMQ'] ?: ""
+            } 
+        }
 }
 
 dependencies {
