@@ -40,6 +40,10 @@
         <resource-file src="src/android/automotive_app_desc.xml" target="res/xml/automotive_app_desc.xml" />
 
         <framework src="src/android/mapbox.gradle" custom="true" type="gradleReference"/>
+        <config-file target="res/values/strings.xml" parent="/*">
+          <string name="mapbox_accesstoken">pk.eyJ1IjoiYWRlcml0b2Zlcm5hbmRlcyIsImEiOiJjbHJtb21lZnoweTBrMmlrNDYzYzZsc3hoIn0.bhCvXolkUy1z5LzdFqkC0A</string>
+        </config-file>
+        
     </platform>
 
    <platform name="ios">
