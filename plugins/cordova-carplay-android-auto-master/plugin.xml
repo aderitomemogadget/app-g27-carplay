@@ -43,7 +43,7 @@
         <config-file target="res/values/strings.xml" parent="/*">
           <string name="mapbox_accesstoken">pk.eyJ1IjoiYWRlcml0b2Zlcm5hbmRlcyIsImEiOiJjbHJtb21lZnoweTBrMmlrNDYzYzZsc3hoIn0.bhCvXolkUy1z5LzdFqkC0A</string>
         </config-file>
-        
+
     </platform>
 
    <platform name="ios">
@@ -61,6 +61,10 @@
 		<config-file parent="com.apple.developer.playable-content" target="*/Entitlements-Release.plist">
             <true/>
 		</config-file>
+
+        <config-file target="*-Info.plist" parent="MGLMapboxAccessToken">
+          <string>pk.eyJ1IjoiYWRlcml0b2Zlcm5hbmRlcyIsImEiOiJjbHJtb21lZnoweTBrMmlrNDYzYzZsc3hoIn0.bhCvXolkUy1z5LzdFqkC0A</string>
+        </config-file>
     
     <header-file src="src/ios/CordovaCarplayPlugin.h" />
     <source-file src="src/ios/CordovaCarplayPlugin.m" />
