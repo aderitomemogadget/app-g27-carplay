@@ -11,7 +11,7 @@
     <gap:platform name="ios" />
     <gap:platform name="android" />
     <preference name="UseSwiftLanguageVersion" value="5.8.1" />
-    <preference name="SwiftVersion" value="5.8.1" />
+    <preference name="SwiftVersion" value="4.2" />
     <preference name="Hostname" value="app" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="false" />
