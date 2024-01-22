@@ -97,7 +97,20 @@
 
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.CALL_PHONE" />
+
+            <uses-permission android:name="androidx.car.app.MAP_TEMPLATES"/>
+
+            <uses-permission android:name="androidx.car.app.NAVIGATION_TEMPLATES"/>
+            <uses-permission android:name="androidx.car.app.ACCESS_SURFACE"/>
+
+            <uses-permission android:name="android.car.permission.CAR_MILEAGE"/>
+            <uses-permission android:name="android.car.permission.CAR_SPEED"/>
+            <uses-permission android:name="android.car.permission.CAR_INFO"/>
+            <uses-permission android:name="android.car.permission.CAR_ENERGY"/>
+            <uses-permission android:name="android.car.permission.READ_CAR_DISPLAY_UNITS"/>
+            <uses-permission android:name="android.car.permission.CAR_ENERGY_PORTS"/>
         </config-file>
+        <feature name="android.hardware.type.automotive" required="true"></feature>
 
         <feature name="NetworkStatus">
             <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
